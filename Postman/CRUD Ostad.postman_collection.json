@@ -1,0 +1,144 @@
+{
+  "info": {
+    "_postman_id": "f3ce6214-e1c4-4ea0-9229-370a2e4673d1",
+    "name": "CRUD Ostad",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "_exporter_id": "40101132"
+  },
+  "item": [
+    {
+      "name": "CreateProduct",
+      "request": {
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n        \"ProductName\": \"Moto G96\",\r\n        \"ProductCode\": 754,\r\n        \"Img\": \"https://www.91-img.com/pictures/170260-v3-moto-g96-5g-mobile-phone-hres-13.jpg?tr=h-271,c-at_max,q-70,pr-true\",\r\n        \"Qty\": 10,\r\n        \"UnitPrice\": 27000,\r\n        \"TotalPrice\": 270000\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "{{BaseUrl}}/CreateProduct",
+          "host": [
+            "{{BaseUrl}}"
+          ],
+          "path": [
+            "CreateProduct"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "UpdateProduct",
+      "request": {
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n        \"ProductName\": \"rew\",\r\n        \"ProductCode\": 23345243,\r\n        \"Img\": \"acbc\",\r\n        \"Qty\": 123,\r\n        \"UnitPrice\": 123,\r\n        \"TotalPrice\": 123\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "{{BaseUrl}}/UpdateProduct/65abe919f68794d36c5b7ffa",
+          "host": [
+            "{{BaseUrl}}"
+          ],
+          "path": [
+            "UpdateProduct",
+            "65abe919f68794d36c5b7ffa"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "ReadProduct",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "{{BaseUrl}}/ReadProduct",
+          "host": [
+            "{{BaseUrl}}"
+          ],
+          "path": [
+            "ReadProduct"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "ReadProductById",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "{{BaseUrl}}/ReadProductById/65abeaddf211d368b013a630",
+          "host": [
+            "{{BaseUrl}}"
+          ],
+          "path": [
+            "ReadProductById",
+            "65abeaddf211d368b013a630"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "DeleteProductById",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "{{BaseUrl}}/DeleteProduct/65abe8b31e27100ba914f2e5",
+          "host": [
+            "{{BaseUrl}}"
+          ],
+          "path": [
+            "DeleteProduct",
+            "65abe8b31e27100ba914f2e5"
+          ]
+        }
+      },
+      "response": []
+    }
+  ],
+  "event": [
+    {
+      "listen": "prerequest",
+      "script": {
+        "type": "text/javascript",
+        "packages": {},
+        "exec": [
+          ""
+        ]
+      }
+    },
+    {
+      "listen": "test",
+      "script": {
+        "type": "text/javascript",
+        "packages": {},
+        "exec": [
+          ""
+        ]
+      }
+    }
+  ],
+  "variable": [
+    {
+      "key": "BaseUrl",
+      "value": "https://crud-api-ostad-live.onrender.com/api/v1"
+    }
+  ]
+}
