@@ -170,15 +170,5 @@ User action (tap) → Flutter screen → ApiService (http request)
 
 ## Screenshots
 
-<!-- Add your screenshots here -->
-| Product List | Add Product | Delete Confirm |
-|---|---|---|
-| _screenshot_ | _screenshot_ | _screenshot_ |
+<img width="882" height="1600" alt="WhatsApp Image 2026-11-12 at 9 56 41 PM" src="https://github.com/user-attachments/assets/f40c78cd-0661-4311-8b20-490a135f54a6" />
 
----
-
-## Author
-
-**Your Name**
-Email: your.email@example.com
-GitHub: [your-username](https://github.com/your-username)
